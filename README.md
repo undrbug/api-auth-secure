@@ -40,19 +40,19 @@ Esta API permite gestionar usuarios y productos de manera segura. Incluye autent
 ---
 ## Endpoints disponibles
    Autenticación
-POST /api/auth/register — Registrar usuario
-POST /api/auth/login — Login y obtención de token
-Usuarios
-GET /api/users — Listar usuarios (requiere autenticación)
-GET /api/users/:id — Ver usuario por ID
-PUT /api/users/:id — Actualizar usuario
-DELETE /api/users/:id — Eliminar usuario
-Productos
-GET /api/products — Listar productos
-GET /api/products/:id — Ver producto por ID
-POST /api/products — Crear producto (requiere autenticación)
-PUT /api/products/:id — Actualizar producto
-DELETE /api/products/:id — Eliminar producto
+* POST /api/auth/register — Registrar usuario
+* POST /api/auth/login — Login y obtención de token
+    Usuarios
+* GET /api/users — Listar usuarios (requiere autenticación)
+* GET /api/users/:id — Ver usuario por ID
+* PUT /api/users/:id — Actualizar usuario
+* DELETE /api/users/:id — Eliminar usuario
+    Productos
+* GET /api/products — Listar productos
+* GET /api/products/:id — Ver producto por ID
+* POST /api/products — Crear producto (requiere autenticación)
+* PUT /api/products/:id — Actualizar producto
+* DELETE /api/products/:id — Eliminar producto
 ---
 ## Contribuciones
 Las contribuciones son bienvenidas. Si encuentras algún error o tienes una mejora, por favor, abre un issue o un pull request.
