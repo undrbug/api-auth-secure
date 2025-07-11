@@ -21,5 +21,55 @@ Esta API permite gestionar usuarios y productos de manera segura. Incluye autent
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/tuusuario/api_rest_users_products.git
+   git clone https://git@github.com:undrbug/api-auth-secure.git
    cd api_rest_users_products/api-auth-secure
+   ```
+2. **Instala las dependencias:**
+   ```bash
+   npm install
+   ```
+3. **Configura las variables de entorno:**
+   Crea un archivo .env basado en .env.example y completa los datos de tu base de datos y JWT_SECRET.
+4. **Inicia la aplicación:**
+   ```bash
+   npm start
+   ```
+5. **Prueba los endpoints:**
+   Utiliza Postman o Thunder Client para probar los endpoints de la API. Puedes encontrar ejemplos de peticiones en la documentación de cada endpoint.
+
+---
+## Endpoints disponibles
+   Autenticación
+POST /api/auth/register — Registrar usuario
+POST /api/auth/login — Login y obtención de token
+Usuarios
+GET /api/users — Listar usuarios (requiere autenticación)
+GET /api/users/:id — Ver usuario por ID
+PUT /api/users/:id — Actualizar usuario
+DELETE /api/users/:id — Eliminar usuario
+Productos
+GET /api/products — Listar productos
+GET /api/products/:id — Ver producto por ID
+POST /api/products — Crear producto (requiere autenticación)
+PUT /api/products/:id — Actualizar producto
+DELETE /api/products/:id — Eliminar producto
+---
+## Contribuciones
+Las contribuciones son bienvenidas. Si encuentras algún error o tienes una mejora, por favor, abre un issue o un pull request.
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.  
+## Contacto
+Para cualquier duda o consulta, puedes contactarme a través de GitHub o mi correo electrónico hgauna@soltec-dev.ar.
+## Tecnologías utilizadas
+- Node.js
+- Express.js
+- MySQL
+- bcryptjs
+- cookie-parser
+- cors
+- dotenv
+- express-validator
+- helmet
+- jsonwebtoken
+- morgan
+- mysql2
